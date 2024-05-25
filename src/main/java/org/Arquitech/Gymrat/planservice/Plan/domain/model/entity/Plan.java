@@ -1,5 +1,6 @@
 package org.Arquitech.Gymrat.planservice.Plan.domain.model.entity;
 
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -33,4 +34,9 @@ public class Plan {
     @NotNull
     @Column(nullable = false)
     private Integer duration;
+
+    private Integer clientId;
+    public Integer getClientId() {
+        return clientId;
+    }
 }
